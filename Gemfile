@@ -75,3 +75,4 @@ end
 gem "devise", "~> 4.8"
 
 gem "tailwindcss-rails", "~> 2.0"
+gem "net-http" # fixes warning: already initialized constant Net::ProtocRetryError
