@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+body {
+    font-family: 'Montserrat', sans-serif;
+    transition: .3s ease;
+}
+
+.bg-velvet{
+    background-color: "#8e7cc3";
+}
+
+.cta{
+    font-family: 'Nerko One', cursive;
+}

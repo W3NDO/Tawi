@@ -1,0 +1,7 @@
+<div>
+    <% if @is_current_user %>
+        This is <%= @user.name %>'s page and they can do whatever
+    <% else %>
+        This is <%= @user.name %>'s page and here are their links
+    <% end%>
+</div>

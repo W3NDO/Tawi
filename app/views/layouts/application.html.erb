@@ -9,15 +9,23 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <!-- font stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nerko+One&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/logo.png">
   </head>
 
-  <body>
+  <body class="bg-[#8e7cc3]">
+    <%#= render partial: "shared/navbar" %>
     <div>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div>
 
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container mx-auto mt-28 px-5 flex ">
       <%= yield %>
     </main>
   </body>

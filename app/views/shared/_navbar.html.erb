@@ -1,0 +1,14 @@
+<nav class="w-full bg-[#8e7cc3]">
+    <% if user_signed_in? %>
+        <div class="w-full p-2 flex justify-center">
+            <span class="font-bold text-white"> TAWI, linking people </span>
+        </div>
+    <% else %>
+        <div class="w-full p-2 flex flex-row-reverse">
+            <ul>
+                <span class="p-2 mx-2 my-1 text-white font-bold rounded-full hover:bg-[#4C4269]"> <%= link_to "Sign In", new_user_session_path  %> </span>
+                <span class="p-2 mx-2 my-1 text-white font-bold rounded-full hover:bg-[#4C4269]"> <%= link_to "Sign Up", new_user_registration_path %> </span>
+            </ul>
+        </div>
+    <% end %>
+</nav>
